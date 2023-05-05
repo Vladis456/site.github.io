@@ -3,9 +3,15 @@ import './index.html';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import './index.scss';
+import { slidersInit } from './modules/sliders';
 
 // use modules
 
+slidersInit('.about__slider', {
+	pagination: {
+		el: '.about__slider-pagination',
+	}
+})
 const videoBG = document.querySelector('.video-bg');
 
 videoBG.innerHTML = `
