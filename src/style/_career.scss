@@ -1,0 +1,93 @@
+.career {
+	margin-top: 80px;
+	@include lg {
+		margin-top: 100px;
+	}
+	
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		align-items: flex-start;
+		margin-bottom: 40px;
+		@include md{
+			display: grid;
+			grid-template-areas: 
+				'title link'
+				'description link';
+			gap: 24px 21px;
+			margin-bottom: 40px;
+		}
+		@include lg{
+			gap: 40px 31px;
+			margin-bottom: 50px;
+		}
+		@include xl {
+			gap: 40px 34%;
+			justify-content: space-between;
+		}
+	}
+	&__title {
+		grid-area: title;
+		font-weight: 1000;
+		font-size: 32px;
+		color: $second;
+		line-height: 1;
+		text-transform: uppercase;
+		@include lg {
+			font-size: 52px;
+		}
+	}
+	&__description {
+		grid-area: description;
+	}
+	&__link {
+		grid-area: link;
+		align-self: flex-start;
+		@include xl {
+			justify-self:  flex-end;
+		}
+	}
+	
+	&__image-list {
+		align-items: center;
+	}
+	&__image-item {
+		@include md {
+			width: 244px;
+			height: 244px;
+			&:nth-child(even) {
+				width: 177px;
+				height: 177px;
+			}
+		}
+		@include lg {
+			width: 333px;
+			height: 333px;
+			&:nth-child(even) {
+				width: 242px;
+				height: 242px;
+			}
+		}
+		@include xl {
+			width: 379px;
+			height: 379px;
+			&:nth-child(even) {
+				width: 274px;
+				height: 274px;
+			}
+		}
+	}
+	&__image {
+		border-radius: 16px;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	&__slider-pagination {
+		@include md {
+			display: none;
+		}
+	}
+}
+

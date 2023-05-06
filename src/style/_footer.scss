@@ -1,5 +1,12 @@
 .footer {
 	margin-top: 60px;
+	padding-bottom: 30px;
+	@include lg {
+		padding-bottom: 0;
+	}
+	@include lg {
+		margin-top: 120px;
+	}
 	&__container {
 		display: grid;
 		grid-template-areas: 
@@ -39,7 +46,7 @@
 			'footer-logo social-list'
 			'copyright developers';
 			justify-content: space-between;
-			padding-bottom: 30px;
+			
 		}
 		&__logo {
 			width: 200px;

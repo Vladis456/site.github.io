@@ -116,25 +116,16 @@
 			font-size: 52px;
 		}
 	}
-	&__count-desc {
-	}
+	
 	&__picture {
 		@include lg {
 			grid-area: slider;
 		}
 	}
-	&__slider {
-		
-	}
-	&__img-list {
-	}
 	&__image {
 		border-radius: 16px;
 	}
-	&__image-wrapper {
-	}
-	&__slider-pagination {
-	}
+	
 }
 
 
