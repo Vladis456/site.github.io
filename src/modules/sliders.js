@@ -3,11 +3,11 @@ import {Swiper, Pagination, Autoplay}  from "swiper";
 const params = {
 	spaceBetween: 20,
 	loop: true,
-	// autoplay: {
-	// 	delay: 3500,
-	// 	disableOnInteraction: false,
-	// },
-	sliderPewView: 1,
+	autoplay: {
+		delay: 3500,
+		disableOnInteraction: false,
+	},
+	slidesPewView: 1,
 	pagination: {
 		el: '.swiper-pagination',
 	},

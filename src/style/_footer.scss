@@ -1,5 +1,5 @@
 .footer {
-	margin-top: 60px;
+	padding-top: 20px;
 	padding-bottom: 30px;
 	@include lg {
 		padding-bottom: 0;
@@ -90,8 +90,8 @@
 			&__developers {
 				margin-bottom: 0;
 				align-self: center;
-			 }
-			 
+			}
+
 			&__copyright {
 				align-self: center;
 			}
