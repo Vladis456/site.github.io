@@ -260,10 +260,6 @@
 			display: block;
 			z-index: -1;
 		}
-		@include xxl {
-			min-height: 100vh;
-			max-width: 2560px;
-			margin: 0 auto;
-		}
+		
 	}
 }

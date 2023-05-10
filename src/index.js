@@ -4,16 +4,18 @@ import 'swiper/scss';
 import 'swiper/scss/pagination';
 import './index.scss';
 import { slidersInit } from './modules/sliders';
+import { videoBackgroundInit } from './modules/videoBackground';
+import { burgerControl } from './modules/menuControl';
 
 // use modules
+videoBackgroundInit();
+burgerControl();
 
 const careerImageItems = document.querySelectorAll('.career__image-item');
 
 careerImageItems.forEach((item, i) => {
   item.classList.add(`career__image-item_${i % 2 ? 'even' : 'odd'}`)
-})
-
-
+});
 
 slidersInit('.about__slider', {
 	pagination: {
@@ -49,14 +51,8 @@ slidersInit('.career__slider', {
     }
   }
 })
-const videoBG = document.querySelectorAll('.video-bg');
-videoBG.forEach(element => {
-  element.innerHTML = `
-  <source src="video/video.webm" type="video/webm">
-  <source src="video/video.mp4" type="video/mp4">`
-});
-// videoBG.innerHTML = `
-// <source src="video/video.webm" type="video/webm">
-// <source src="video/video.mp4" type="video/mp4">`;
+
+
+
 
 
