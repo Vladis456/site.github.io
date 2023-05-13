@@ -1,4 +1,5 @@
 import './index.html';
+import './page.html';
 // new modules
 import 'swiper/scss';
 import 'swiper/scss/pagination';
@@ -6,11 +7,12 @@ import './index.scss';
 import { slidersInit } from './modules/sliders';
 import { videoBackgroundInit } from './modules/videoBackground';
 import { burgerControl } from './modules/menuControl';
+import { locationHover } from './modules/locationHover';
 
 // use modules
 videoBackgroundInit();
 burgerControl();
-
+locationHover();
 const careerImageItems = document.querySelectorAll('.career__image-item');
 
 careerImageItems.forEach((item, i) => {
