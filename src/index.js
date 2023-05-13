@@ -9,11 +9,13 @@ import { videoBackgroundInit } from './modules/videoBackground';
 import { burgerControl } from './modules/menuControl';
 import { locationHover } from './modules/locationHover';
 import { pageControlInit } from './modules/pageControl';
+import { initScrollTopButton } from './modules/scrollTopButton';
 
 // use modules
 videoBackgroundInit();
 burgerControl();
 locationHover();
+initScrollTopButton('arrow-top');
 pageControlInit();
 const careerImageItems = document.querySelectorAll('.career__image-item');
 
